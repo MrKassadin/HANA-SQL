@@ -16,7 +16,7 @@ GROUP BY T1."Code",T1."Name";
 
 SELECT * FROM "@U_SBPTY3";
 SELECT * FROM "@U_CBPTY4";
-UPDATE "OCRD" SET "U_SupClass3" = '110' WHERE "U_SupClass3"='130';
+UPDATE "OCRD" SET "U_SupClass3" = '121' WHERE "U_SupClass3"='118';
 
 --供应商地区数量统计
 SELECT
