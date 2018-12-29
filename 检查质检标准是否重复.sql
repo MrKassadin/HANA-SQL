@@ -1,0 +1,11 @@
+SELECT T0."DocEntry",T0."U_BPLId",T0."U_ItemCode"
+FROM "@U_QASD" T0
+WHERE EXISTS
+(
+SELECT "U_ItemCode" FROM "@U_QASD" T1
+WHERE T0."U_ItemCode"=T1."U_ItemCode"
+AND T1."U_BPLId"=4
+GROUP BY "U_ItemCode"
+HAVING COUNT(*)>=2
+)
+AND T0."U_BPLId"=4;
